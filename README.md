@@ -1,21 +1,17 @@
-# NASM Assembly
+# CISC 225 - Week 12 Exercises
 
-A Codepsaces template for building, running, and debugging assembly programs
-using the NASM assembler.
+## Hypotenuse
 
-Intended for a course in *Computer Organization*, this template includes
-tasks for building the assembly source file that is currently open in the editor.
-Two build options are included: one for building a pure assembly program
-requiring no external libraries (*nasm - Assemble/link/debug active file*),
-and another for building an assembly program to be linked with the
-C library (*nasmc - Assemble/link/debug active file w/ C library*).
+Write a program that prompts for two double-precision floating point values
+representing two sides of a right triangle.
+The program should calculate and output the length of the hypotenuse.
 
-Two sample programs are included:
+## Temperature Conversion
 
-- ***hello-world.asm*** - Writes "Hello World!" to the console using the
-*syscall* instruction. This file may be built and run using only assembly
-instructions - no linking with external libraries is necessary. The program
-entry point is *_start*.
-- ***hello-world-c.asm*** - Writes "Hello World!" to the console using the
-*printf* function from the C library. This file must be linked with the
-C library. The program entry point is *main*.
+Write a program that inputs a temperature and temperature scale,
+either 'f' or 'c', and converts that temperature to the other scale.
+(Scales being 'f' for Fahrenheit and 'c' for Celsius.)
+
+Input should be in the form `98.6f` and should accept either
+lowercase or uppercase for the scale.
+If an invalid scale is provided, the program should simply quietly exit.
